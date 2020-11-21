@@ -1,5 +1,3 @@
-
-
 const express = require('express') // 다운받은 express 가져옴
 const app = express() // 새로운 express 앱 만들기
 const port = 5000 // 포트는 아무거나 상관없다.
