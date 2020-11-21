@@ -26,7 +26,7 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 // 몽고 DB 연결하기
 // 1. 몽고 DB 사이트 접속 , 클러스터 만들기, 몽고db 유저 생성
-// id : hun , password : dudgns941!
+// id : hun , password : password
 
 // mongodb+srv://hun:<password>@boilerplate.oevwc.mongodb.net/<dbname>?retryWrites=true&w=majority
 
@@ -52,5 +52,5 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 // #6 . github 연결 (ssh로 github 연결하기)
 
 // ssh 설정하기
-// ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGQoflpfSLwGBKojTBfXtcCgoWvoCNxKMBFOfQmFMGjn dlrmwl15@gmail.com
+
 // https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
