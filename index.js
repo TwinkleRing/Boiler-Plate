@@ -18,7 +18,7 @@ mongoose.connect('mongodb+srv://hun:password@boilerplate.oevwc.mongodb.net/Boile
 }).then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err))
 
-<<<<<<< HEAD
+
 app.get('/', (req, res) => res.send('안녕하세요 ~ !'))
 
 app.post('/register', (req, res) => {
