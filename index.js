@@ -1,10 +1,4 @@
-// 백엔드 시작점
 
-// express js 설치
-
-// npm install express --save
-
-// node_modules 안에 내가 다운 받은 라이브러리들이 있다.
 
 const express = require('express') // 다운받은 express 가져옴
 const app = express() // 새로운 express 앱 만들기
@@ -26,6 +20,7 @@ mongoose.connect('mongodb+srv://hun:dudgns941!@boilerplate.oevwc.mongodb.net/Boi
 }).then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err))
 
+<<<<<<< HEAD
 app.get('/', (req, res) => res.send('안녕하세요 ~ !'))
 
 app.post('/register', (req, res) => {
@@ -46,4 +41,10 @@ app.post('/register', (req, res) => {
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+=======
+app.get('/',(req,res) => res.send('안녕하세요 ~ !'))
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+>>>>>>> 9867537a15b1d75acd32ef9c3e52f48584bd4675
 
