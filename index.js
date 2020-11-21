@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb+srv://hun:dudgns941!@boilerplate.oevwc.mongodb.net/BoilerPlate?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://hun:password@boilerplate.oevwc.mongodb.net/BoilerPlate?retryWrites=true&w=majority', {
     useNewUrlParser : true, useUnifiedTopology: true , useCreateIndex : true, useFindAndModify : false
     // 에러 안뜨게 함
 }).then(() => console.log('MongoDB Connected...'))
