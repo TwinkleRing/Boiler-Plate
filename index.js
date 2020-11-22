@@ -11,13 +11,23 @@ app.use(bodyParser.json());
 
 // mongoose 
 const mongoose = require('mongoose');
+<<<<<<< HEAD
 mongoose.connect('mongodb+srv://hun:dudgns941!@boilerplate.oevwc.mongodb.net/BoilerPlate?retryWrites=true&w=majority', {
+=======
+
+
+mongoose.connect('mongodb+srv://hun:password@boilerplate.oevwc.mongodb.net/BoilerPlate?retryWrites=true&w=majority', {
+>>>>>>> bd5c440a57d0b270064c0ad63accca8b0d7adad2
     useNewUrlParser : true, useUnifiedTopology: true , useCreateIndex : true, useFindAndModify : false
 }).then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err))
 
 
+<<<<<<< HEAD
 app.get('/', (req, res) => res.send('오늘은 11월 23일,   안녕하세요!'))
+=======
+app.get('/', (req, res) => res.send('안녕하세요 ~ !'))
+>>>>>>> bd5c440a57d0b270064c0ad63accca8b0d7adad2
 
 app.post('/register', (req, res) => {
     // 회원 가입 할때 필요한 정보들을 client에서 가져오면 
@@ -34,5 +44,10 @@ app.post('/register', (req, res) => {
     })
 })
 
+<<<<<<< HEAD
+=======
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+>>>>>>> bd5c440a57d0b270064c0ad63accca8b0d7adad2
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
