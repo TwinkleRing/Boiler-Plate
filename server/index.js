@@ -1,6 +1,5 @@
 const express = require('express') // 다운받은 express 가져옴
 const app = express() // 새로운 express 앱 만들기
-const port = 5000 // 포트는 아무거나 상관없다.
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const { User }  = require("./models/User");
@@ -24,8 +23,13 @@ mongoose.connect(db.mongoURI,{
   }).then(() => console.log('MongoDB connected...'))
   .catch(error => console.log(error))
 
-app.get('/', (req, res) => res.send('오늘은 11월 23일,   안녕하세요!'))
+app.get('/', (req, res) => res.send(' 안녕하세요!'))
 
+app.get('.api/hello', (req, res) => {
+    
+
+    res.send("안녕!")
+})
 app.post('/api/users/register', (req, res) => {
     
     // 회원 가입 할때 필요한 정보들을 client에서 가져오면 
@@ -112,4 +116,7 @@ app.get('/api/users/logout', auth, (req, res) => {
 })
 
 
+
+
+const port = 5000 // 포트는 아무거나 상관없다.
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
